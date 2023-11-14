@@ -4,8 +4,12 @@
 typedef struct TreeNode
 {
     char ch;
-    TreeNode* left;
-    TreeNode* right;
-} TreeNode; 
+    TreeNode* zero;
+    TreeNode* one;
+    TreeNode(TreeNode* left = nullptr, TreeNode* right = nullptr);
+    TreeNode(char c);
+    bool isLeaf() const;
+    bool getChar() const;
+} TreeNode;
 
 #endif
